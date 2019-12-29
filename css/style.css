@@ -135,6 +135,9 @@ a:hover{
 footer > div > div > p {
 
 }
+footer > div > div > div > ul > li > a {
+  color: orangered;
+}
 /*
 .posts>ul {
   margin: none;
