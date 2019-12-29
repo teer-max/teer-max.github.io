@@ -132,8 +132,8 @@ a:hover{
   background-repeat: no-repeat;
   background-position: center;
 }
-footer > div > div {
-  align-items: center; 
+footer > div > div > p {
+
 }
 /*
 .posts>ul {
