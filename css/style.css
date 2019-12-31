@@ -35,6 +35,7 @@ header{
   font-family: monospace;
   margin: 5rem 10rem 2rem 10rem;
 }
+
 a:hover{
   text-decoration: none;
 }
@@ -87,23 +88,36 @@ a:hover{
   margin: 0 0 0 0;
   background: rgba(0,0,0,0.7);
 }
+.posts > a {
+  display: block;
+}
 .blurb{
   display: block;
-  position: relative;
-  color: white;
-  height: 30%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.blurb>p{
-  display: block;
   padding: 15px 15px 20px 20px;
+  overflow-y: scroll;
   color: darkgray;
-  position: absolute;
-  text-overflow: ellipsis;
+  height: 30%;
 }
-.post:hover .blurb>p{
+.post:hover .blurb{
   color: white;
+}
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(60,60,60);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: orangered;
 }
 
 #post1img {
@@ -132,12 +146,22 @@ a:hover{
   background-repeat: no-repeat;
   background-position: center;
 }
-footer > div > div > p {
 
-}
+footer > div > div > p {}
+
 footer > div > div > div > ul > li > a {
   color: orangered;
 }
+
+@media screen and (max-width: 850px){
+  #banner > h5 {
+    margin: 3rem 3rem 1rem 3rem;
+  }
+  .postbg > h1{
+    font-size: 1.5rem;
+  }
+}
+
 /*
 .posts>ul {
   margin: none;
